@@ -52,7 +52,7 @@ const Yes_no = () => {
     return noLink[Math.min(noCount, noLink.length - 1)];
   };
   return (
-    <div className="overflow-hidden flex flex-col items-center justify-center pt-4 h-screen -mt-16 selection:bg-rose-600 selection:text-white text-zinc-900">
+    <div className="overflow-hidden flex flex-col items-center justify-center pt-[2rem] mt-[12rem] selection:bg-rose-600 selection:text-white text-zinc-900">
       {yesPressed ? (
         <>
           <img
