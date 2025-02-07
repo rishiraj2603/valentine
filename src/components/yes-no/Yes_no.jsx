@@ -52,7 +52,7 @@ const Yes_no = () => {
     return noLink[Math.min(noCount, noLink.length - 1)];
   };
   return (
-    <div className="overflow-hidden flex flex-col items-center justify-center h-dvh selection:bg-rose-600 selection:text-white text-zinc-900">
+    <div className="overflow-hidden flex flex-col items-center  h-dvh selection:bg-rose-600 selection:text-white text-zinc-900">
       {yesPressed ? (
         <>
           <img
@@ -62,9 +62,9 @@ const Yes_no = () => {
           />
           <img
             src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
-            className="h-[6rem]"
+            className="size-[6rem] "
           />
-          <img src={oneYes} alt="" className="h-[6rem]" />
+          <img src={oneYes} alt="" className="size-[6rem] " />
           <div className="text-[0.5rem] md:text-6xl font-bold my-4">
             Ok Yayyyyy!!!
           </div>
@@ -77,7 +77,7 @@ const Yes_no = () => {
             className="absolute -z-20 left-0 right-0 top-0 h-max w-full"
           />
           <img
-            className="h-[6rem] rounded-lg shadow-lg"
+            className="size-[6rem] rounded-lg shadow-lg"
             src={noCount === 0 ? FirstImage : NoImage()}
           />
 
