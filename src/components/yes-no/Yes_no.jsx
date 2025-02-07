@@ -7,13 +7,14 @@ import fiveNo from "../../assets/5thNo.jpeg";
 import sixNo from "../../assets/6thNo.jpeg";
 import oneYes from "../../assets/1stYes.jpeg";
 import FirstImage from "../../assets/firstImage.jpeg";
-import bg from "../../assets/bgImage.png";
+import bg_no from "../../assets/No_Bg.jpg";
+import bg_yes from "../../assets/Yes_Bg.jpg";
 
 const Yes_no = () => {
   const [noCount, setNoCount] = useState(0);
   console.log("🚀 ~ constYes_no= ~ noCount:", noCount);
   const [yesPressed, setYesPressed] = useState(false);
-  const yesButtonSize = noCount * 20 + 16;
+  const yesButtonSize = noCount * 0.5 + 1;
 
   const handleNoClick = () => {
     setNoCount(noCount + 1);
@@ -54,6 +55,11 @@ const Yes_no = () => {
     <div className="overflow-hidden flex flex-col items-center justify-center pt-4 h-screen -mt-16 selection:bg-rose-600 selection:text-white text-zinc-900">
       {yesPressed ? (
         <>
+          <img
+            src={bg_yes}
+            alt=""
+            className="absolute -z-10 left-0 right-0 h-max w-full "
+          />
           <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" />
           <img src={oneYes} alt="" />
           <div className="text-4xl md:text-6xl font-bold my-4">
@@ -63,22 +69,22 @@ const Yes_no = () => {
       ) : (
         <>
           <img
-            src={bg}
+            src={bg_no}
             alt=""
-            className="absolute -z-10 left-0 right-0 h-max w-full"
+            className="absolute -z-20 left-0 right-0 h-max w-full"
           />
           <img
-            className="h-[230px] rounded-lg shadow-lg"
+            className="h-[6rem] rounded-lg shadow-lg"
             src={noCount === 0 ? FirstImage : NoImage()}
           />
 
-          <h1 className="text-4xl md:text-6xl my-4 text-center">
+          <h1 className="text-[0.5rem] md:text-6xl my-4 text-center text-white">
             Will you be my Valentine?
           </h1>
           <div className="flex flex-wrap justify-center gap-2 items-center">
             <button
               className={`bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg mr-4`}
-              style={{ fontSize: yesButtonSize }}
+              style={{ fontSize: yesButtonSize + "rem" }}
               onClick={() => setYesPressed(true)}
             >
               Yes
