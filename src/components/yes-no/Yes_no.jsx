@@ -5,7 +5,7 @@ import threeNo from "../../assets/3rdNo.jpeg";
 import fourNo from "../../assets/4thNo.jpeg";
 import fiveNo from "../../assets/5thNo.jpeg";
 import sixNo from "../../assets/6thNo.jpeg";
-import oneYes from "../../assets/1styes.jpeg";
+import oneYes from "../../assets/1stYes.jpeg";
 import FirstImage from "../../assets/firstImage.jpeg";
 import bg from "../../assets/bgImage.jpg";
 
