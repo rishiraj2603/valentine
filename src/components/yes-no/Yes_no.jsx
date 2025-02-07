@@ -58,7 +58,7 @@ const Yes_no = () => {
           <img
             src={bg_yes}
             alt=""
-            className="absolute -z-10 left-0 right-0 h-max w-full "
+            className="absolute -z-10 left-0 right-0 top-0 h-max w-full "
           />
           <img
             src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif"
@@ -74,7 +74,7 @@ const Yes_no = () => {
           <img
             src={bg_no}
             alt=""
-            className="absolute -z-20 left-0 right-0 h-max w-full"
+            className="absolute -z-20 left-0 right-0 top-0 h-max w-full"
           />
           <img
             className="h-[6rem] rounded-lg shadow-lg"
