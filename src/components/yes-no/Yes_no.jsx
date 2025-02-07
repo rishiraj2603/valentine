@@ -65,8 +65,8 @@ const Yes_no = () => {
             className="size-[6rem] "
           />
           <img src={oneYes} alt="" className="size-[6rem] " />
-          <div className="text-[0.5rem] md:text-6xl font-bold my-4">
-            Ok Yayyyyy!!!
+          <div className="text-[0.5rem] md:text-6xl font-bold my-4 text-white">
+            Ok Yayyyyy!!!😍😘😍🩷😍😘😍🩷😍😘😍🩷
           </div>
         </>
       ) : (
