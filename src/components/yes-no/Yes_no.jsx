@@ -7,7 +7,7 @@ import fiveNo from "../../assets/5thNo.jpeg";
 import sixNo from "../../assets/6thNo.jpeg";
 import oneYes from "../../assets/1stYes.jpeg";
 import FirstImage from "../../assets/firstImage.jpeg";
-import bg from "../../assets/bgImage.jpg";
+import bg from "../../assets/bgImage.png";
 
 const Yes_no = () => {
   const [noCount, setNoCount] = useState(0);
@@ -62,7 +62,11 @@ const Yes_no = () => {
         </>
       ) : (
         <>
-          <img src={bg} alt="" className="absolute -z-10 left-0 right-0" />
+          <img
+            src={bg}
+            alt=""
+            className="absolute -z-10 left-0 right-0 h-max w-full"
+          />
           <img
             className="h-[230px] rounded-lg shadow-lg"
             src={noCount === 0 ? FirstImage : NoImage()}
